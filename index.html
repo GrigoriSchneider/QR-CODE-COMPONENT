@@ -23,7 +23,7 @@
 
     body{
       height: 100vh;
-      background-color: darkgray;
+      background-color: #D6E1F0;
       font-family: "Outfit", sans-serif;
       font-optical-sizing: auto;
       font-weight: 400;
@@ -31,14 +31,13 @@
 
     }
    
-    .container{
+    .card--text{
      
-     padding-left: 25px;
-     padding-right: 25px;
-    
-     h4{
-f
-     }
+      padding-left: 25px;
+      padding-right: 25px;
+      text-align: center;
+     
+      
     }
   
 
@@ -46,8 +45,15 @@ f
       background-color: white;
       width: 320px;
       height: 499px;
-      padding: 2px 16px;
+      padding: 0 0;
       border-radius: 15px;
+
+
+      position:absolute;
+      top:50%;
+      left:50%;
+      margin-left:-160px;/* half width*/
+      margin-top:-250px;/* half height*/
       
       /* Add shadows to create the "card" effect */
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -57,15 +63,17 @@ f
       
     }
     h4{
-      font-weight: 700;
-      height: 16px;
+      font-weight: 900;
+      height: 30px;
+      padding-bottom: 16px;
+      font-size: larger;
     }
     .card--img{
       height: 288px;
       width: 288px;
       align-self: center;
       border-radius: 15px;
-      margin-top: 30px;
+      margin-top: 16px;
       margin-left: 15px;
     }
     
@@ -81,13 +89,13 @@ f
 </head>
 <body >
 
-  <h1>First Challenge</h1>
+  
 
 
   <div class="card">
     <img class="card--img" src="images/image-qr-code.png" alt="qr-code" >
-    <div class="container">
-      <h4><b>Improve your front-end skills by building projects</b></h4>
+    <div class="card--text">
+      <h4>Improve your front-end<br>skills by building projects</h4>
       <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
   </div>
 </div>
